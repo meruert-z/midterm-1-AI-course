@@ -9,7 +9,7 @@ Fingerprint: a7d153dc
 
 ## AI-use declaration
 
-(About half a page: which assistants or tools you used and for what. If you used none, say so.)
+I used ChatGPT to help me understand the assignment instructions because some parts were difficult to understand at first. I also used it to translate my own answers into English and check whether they were written correctly. The calculations, analysis, and final answers were completed by me using the data provided in the assignment. ChatGPT helped me understand what I needed to do, but I made the final decisions and filled in the answers myself.
 
 ## Part 1: Retrieval and cost decision
 
