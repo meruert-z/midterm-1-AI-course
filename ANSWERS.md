@@ -71,23 +71,23 @@ I recommend L as the initial option because it keeps processing under our contro
 
 ### Q1
 
-Number: 2.30
-Why (at most 40 words): The Kazakh answer costs more because it uses more input and output tokens. The bill ratio is different from the token ratio because input and output tokens have different prices.
+Number: 2.74
+Why (at most 40 words): Kazakh uses more tokens than English, but input and output tokens have different prices. The bill ratio is therefore different from the total token ratio.
 
 ### Q2
 
-Number:51.6%
-Why (at most 40 words): The English text uses 263 e5 tokens, but the model can read only 512 tokens. At a chunk size of 256 cl100k tokens, English is not cut off, so I think I need to check the question wording again.
+Number: 35.1% 
+Why (at most 40 words): English produces about 789 e5 tokens, so 277 tokens are not seen by the embedding model. Russian and Kazakh stay below the 512-token limit and are not cut.
 
 ### Q3
 
-Number: 0.3906
-Why (at most 40 words): After applying top-p, the remaining token probabilities are normalized to sum to 1. The top token has the largest probability, so its probability becomes higher after the other tokens are removed.
+Number: 75.6%
+Why (at most 40 words): Top-p removes lower-ranked tokens once the cumulative probability reaches 0.95, then renormalizes the remaining probabilities. Lowering temperature changes the probability distribution but does not remove tokens in the same way.
 
 ### Q4
 
-Number: -3
-Why (at most 40 words): Pipeline Y gets 67 points for correct answers and loses 15 points for wrong answers, giving 52. Pipeline X gets 69 minus 31, giving 38. Therefore, Y scores 14 points higher, although the public leaderboard may prefer accuracy.
+Number: +14
+Why (at most 40 words): Model Y scores 52 points after penalties, while Model X scores 38. However, the public leaderboard prefers X because it has more correct answers, which can encourage guessing instead of saying “I don't know.”
 
 ### Q5
 
